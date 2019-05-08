@@ -1,0 +1,165 @@
+*{
+box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  color:#fff;
+  font-size:16px;
+  line-height:1.4em;
+  padding: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  color:#eee;
+}
+
+h1 {
+  font-size:38px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.container {
+    margin: auto;
+    background-color:#222;
+    -webkit-box-shadow: 0 0 10px #999;
+    box-shadow:0 0 10px #999;
+    position:relative;
+}
+
+/* Header
+/////////////////
+/////////////////*/
+
+#header-wrap {
+  height: 80px;
+  position:relative;
+  padding: 30px 0px;
+}
+
+.logo {
+  font-weight: 700;
+  float:left;
+  letter-spacing: 4px;
+  margin-left: 30px;
+}
+
+nav {
+  float: right;
+  margin-right: 30px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  float:left;
+}
+
+nav li a {
+  padding: 0 20px;
+  font-size:14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+nav li:last-child a {
+  padding-right: 0;
+}
+
+.nav-icon {
+  float:right;
+  height:50px;
+  width: 30px;
+  margin-top: -18px;
+  position: relative;
+  display:none;
+  margin-right: 30px;
+}
+
+.nav-icon span {
+  top:50%;
+  bottom:50%;
+}
+.nav-icon span, .nav-icon span::before, .nav-icon span::after  {
+  height:3px;
+  background-color: white;
+  width:100%;
+  display:block;
+  content: " ";
+  position:relative;
+  -webkit-transition:all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-icon span::before{
+  top:10px;
+}
+.nav-icon span::after{
+  top: -12px;
+}
+
+.nav-icon.is-open span {
+  background-color:transparent;
+}
+.nav-icon.is-open span::before, .nav-icon.is-open span::after {
+  transform-origin: center;
+  transform: rotate(45deg);
+    top:0;
+}
+.nav-icon.is-open span::after {
+  transform: rotate(-45deg);
+  top:-3px;
+}
+
+
+
+
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+
+  /* Header
+  /////////////////
+  /////////////////*/
+  nav {
+    top: 80px;
+    padding: 20px;
+    width:100%;
+    margin:0;
+    background-color:#222;
+    transition: all 0.2s ease-in-out;
+    transform:translateY(-200px);
+    z-index: -99999;
+  }
+
+  nav.is-open{
+    display:block;
+    transform:translateY(0px);
+  }
+  nav li {
+    clear:left;
+    width:100%;
+  }
+  nav li a {
+    display:block;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-icon{
+    display:block;
+  }
+}
