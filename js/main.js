@@ -49,7 +49,7 @@ function workInfo() {
         workType = $this.data('work'),
         workImg = $this.data('image'),
         imgType = $this.data('imagetype'),
-        workUrl = "https://wwww.stevenvu.com/images/"
+        workUrl = 'http://www.stevenvu.com/images/'
 
     var workFill = '<div class="work-overlay animated clearfix">' +
       '<div class="close">'+
