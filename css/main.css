@@ -200,14 +200,15 @@ nav li:last-child a {
 }
 @media only screen and (max-width: 480px) {
   #intro .intro-wrapper .intro-text h1 {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 500;
     letter-spacing: 0.2em;
   }
 }
 @media only screen and (max-width: 480px) {
   #intro .intro-wrapper .intro-text p {
-    font-size: 12px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -704,6 +705,12 @@ a.featured-link:hover .work-content p{
   color: #fff;
 }
 
+.workdetails p, #intro .content-copy{
+  font-size: 18px;
+  line-height: 24px;
+}
+
+
 @media only screen and (max-width: 480px) {
   .featured-container {
     display:flex;
@@ -721,7 +728,7 @@ a.featured-link:hover .work-content p{
     max-width: 192px;
   }
   
-  .work-img {
+  .work-img, .ffftv .work-img {
     width: 100%;
     display:flex;
     justify-content: center;
@@ -733,6 +740,12 @@ a.featured-link:hover .work-content p{
    object-fit: cover;
    object-position: top;
    width: 500px;
+  }
+
+  h2 {font-size: 24px;}
+
+  .workdetails p, #intro .content-copy {
+    font-size:16px;
   }
 
 }
