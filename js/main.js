@@ -81,7 +81,7 @@ function actionTool() {
 
 function anchorScroll(){
   $('nav li:first-child a, nav li:nth-child(2) a').click(function(e){
-    event.preventDefault();
+
       var anchorAttr = $(this).attr('data-title'); //get attribute number
       var anchorPos = $('#' + anchorAttr).offset().top; //get position of anchor with attribute
       $('html,body').stop().animate({scrollTop: anchorPos}); // animate scroll bar to position
