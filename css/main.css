@@ -198,6 +198,10 @@ nav li:last-child a {
   margin: 0 auto;
   text-align: center;
 }
+
+.intro-text a:hover {
+ text-decoration: underline;
+}
 @media only screen and (max-width: 480px) {
   #intro .intro-wrapper .intro-text h1 {
     font-size: 24px;
